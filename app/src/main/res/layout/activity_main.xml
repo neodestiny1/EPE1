@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Nuevo Registro"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tv_subtitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A continuación, ingrese sus datos"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre:" />
+
+            <EditText
+                android:id="@+id/et_apellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apellido:" />
+
+            <EditText
+                android:id="@+id/et_edad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Edad:"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo:" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña:"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/et_repPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Repetir Contraseña:"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/tv_sexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sexo" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_hombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Hombre" />
+
+                <RadioButton
+                    android:id="@+id/rb_mujer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mujer" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_estadoCivil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estado Civil" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_soltero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Soltero" />
+
+                <RadioButton
+                    android:id="@+id/rb_casado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Casado" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_actividad_hobbies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Actividad o Hobbies" />
+
+            <CheckBox
+                android:id="@+id/cb_leer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Leer" />
+
+            <CheckBox
+                android:id="@+id/cb_videojuegos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Videojuegos" />
+
+            <CheckBox
+                android:id="@+id/cb_deportes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deportes" />
+
+            <CheckBox
+                android:id="@+id/cb_musica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Música" />
+
+            <ImageView
+                android:id="@+id/iv_1"
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/tomarFoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Abrir Cámara" />
+
+            <Button
+                android:id="@+id/btn_registrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="nuevoXml"
+                android:text="Registrar" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--Nombre-->
+    <!--Apellido-->
+    <!--Edad-->
+    <!--Sexo-->
+    <!--Estado civil-->
+    <!--Actividades o hobbies (Checkbox)-->
+    <!--Email (Texto)-->
+
+    <!--Password-->
+
+    <!--Rep. Password (Validar que sean iguales)-->
+
+
+</LinearLayout>
